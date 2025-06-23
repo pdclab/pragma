@@ -1,1 +1,345 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>pragma: Ensuring Relationship Privacy in Large Networks</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- Image CSS -->
+  <link href="css/img-css.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+  <!-- Open Sans, nice font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favion -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">pragma</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li><a class="page-scroll" href="#overview">Overview</a></li>
+          <li><a class="page-scroll" href="#members">Members</a></li>
+          <!--li><a class="page-scroll" href="#publications">Publications</a></li-->
+          <!--li><a class="page-scroll" href="#resources">Resources</a> </li-->
+          <li><a class="page-scroll" href="#support">Support</a> </li>
+          <!--li><a href="https://github.com/boomerang-lang/boomerang/tree/master/optician" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" style="position:absolute; margin:-5px;"></i></a></li-->
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+
+<!-- alternatingly label section with "even" or "odd" -->
+
+    <section id="intro" class="even-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron">
+  <img class="img-responsive center-block" src="img/pragma-logo.png" style="max-width: 50%"/>
+  <br/>
+  <br/>
+  <br/>
+  <p>Ensuring Relationship Privacy in Large Networks</p>
+  <ul class="list-inline">
+    <li>
+      <a class="btn btn-lg btn-primary page-scroll" href="#overview">
+        Learn More »
+      </a>
+    </li>
+    <!--li>
+      <a class="btn btn-lg btn-success" href="https://github.com/boomerang-lang/boomerang/tree/master/optician" target="_blank">
+        See on Github »
+      </a>
+    </li-->
+  </ul>
+</div>                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="odd-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="page-header">
+<h1>Overview</h1>
+</div>
+
+<p>According to Gartner, end-user expenses on security and privacy are expected to total $215 billion in 2024. These expenses reflect very real concerns for data leakage of private information to nefarious actors. For example, patients may want to keep aspects of their healthcare data private from their employers or insurance companies. Governments may require institutions guarantee that citizen data does not leak outside borders. Users may want to keep aspects of their lives private from employers who may discriminate upon them based on minority status, or even based upon associations with minorities.</p>
+
+<p>However, data sharing enables technologies and research that are otherwise out of scope. For example, data sharing in health care enables longitudinal studies that can help identify environmental comorbidities, find research biases, and more.</p>
+
+<p>Lots of work has gone into studying how to share data in larger networks, while not betraying user privacy concerns. But these studies largely focus on the properties of individual data points, or simple relationships between those individual points. This is unsatisfying, as recent advances in graph mining research permit learning complex and intricate relationships between entities (e.g., discovering insightful subgraph structures) within these large data sets. With these larger systems, users cannot know whether nefarious actors can infer data about them and their relationships from these larger graphs.</p>
+
+<h3>Our Pragmatic Solution: pragma</h3>
+
+<p>We propose <i>pragma</i>, a system that enables privacy at the level of complex and transitive interrelationships. In pragma, users can programmatically encode relationships they wish to keep private. pragma would then model these constraints at the subgraph level to capture the interdependence between the individual data points, relationships in their broader neighbourhood, and across the entire network. The above models will then be leveraged to prevent relationships users consider sensitive from being leaked. We envision our research will open pathways to building privacy solutions that consider complex interrelationships from a privacy perspective.</p>
+
+<p>In addition to expertise in privacy protection, pragma will draw upon the knowledge and skills from programming languages and graph data analytics research. We identify several key challenges that will be addressed throughout this project. First, we need to establish the boundaries of different relationship level privacy needs in terms of the constraints that get translated at subgraph level as well as across the entire network. Second, we need to model various data sharing specifications over data points and relationships such that the relationship level privacy needs are never violated. Third, we need to design data sharing protocols with complex querying capabilities at subgraph level while still adhering to the underlying relationship level privacy specifications. Finally, we need to enhance the data sharing protocols to safeguard against inference of sensitive relationship data over series of independent data sharing sessions.</p>
+
+<p>In addressing these challenges we aim to design broader relationship-level threat classes based on the graph querying capabilities, and develop robust solutions to guarantee relationship-level privacy throughout each of those classes. Our solutions will capture different practical querying use cases like K-Hop queries and community-centric queries. We will further address diverse relationship-level privacy needs by creating a need-inclusive relationship-level privacy framework that enables users to customize their policies. We also aim to identify key metrics to measure the effectiveness of privacy preservation at relationship-level, which will help us quantify the impact of our solutions. Our solutions will establish the forefront of state-of-the-art technology for relationship-level privacy preserving techniques. </p>
+
+<p>For practical adoption and impact, our plan is to engage with industry from the get go, and capture the scenarios they face along with any data they may be willing to share. We plan to construct benchmarks and datasets (safely anonymized) and potentially release them for wider adoption. We also aim to build software tools and help our potential industrial partners in adopting them to benefit the consumers of their products. Finally, we aim to ensure sustainability by producing research papers and releasing software tools, which will empower fellow researchers and practitioners to contribute and catalyze diverse avenues for future research. Our eventual goal is to help make Canada a leader at the intersection of graph-based analytics systems and security and privacy.</p>
+
+
+
+<!--p> Many programs are
+    dedicated to converting data from one form into another.  Domain specific
+    languages allow for implementations of these data transformers, while
+    guaranteeing desired properties, but these
+    languages can be difficult to learn and program in.
+
+    In this project, we take in a specification of the data formats, as well as
+    a suite of examples, and synthesize a program in a data conversion DSL.
+</p>
+
+<h3> Boomerang Synthesis </h3>
+<p>
+    Boomerang is a language for transforming string data.
+    A boomerang program is a "lens": it can convert from a source data format
+    to a target data format, and back from the target to the source.  These
+    pairs of functions satisfy useful invertibility properties.
+
+    In this project, we take as input two format descriptors, in the form of regular
+    expressions, and a suite of input-output examples,
+    and synthesize a boomerang program that converts back-and-forth between
+    those format descriptors.  
+</p-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="members" class="even-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="page-header">
+<h1>Members</h1>
+</div>
+
+<!--div class="row">
+<div class="col-md-6">
+<h2><img src="img/upenn-logo.jpg" class="uni-shield" alt="UPenn" /> UPenn</h2>
+<ul>
+  <li><a href="http://www.cis.upenn.edu/~bcpierce/">Benjamin Pierce</a> (Faculty)</li>
+  <li><a href="http://www.cis.upenn.edu/~stevez/">Steve Zdancewic</a> (Faculty)</li>
+  <li><a>Solomon Maina</a> (PhD student)</li>
+</ul>
+</div>
+
+<div class="col-md-6">
+<h2><img src="img/princeton-logo.png" class="uni-shield" alt="Princeton" /> Princeton</h2>
+<ul>
+  <li><a href="http://www.cs.princeton.edu/~dpw">David Walker</a> (Faculty)</li>
+  <li><a href="..">Anders Miltner</a> (PhD student)</li>
+</ul>
+</div>
+</div-->
+
+<div class="row">
+<div class="col-md-6">
+<h2><img src="img/sfu-logo.png" alt="Simon Fraser University" style="max-width: 15%"/>&nbsp;&nbsp;&nbsp;Simon Fraser University</h2>
+<ul>
+  <li><a href="https://www.cs.sfu.ca/~keval/">Keval Vora</a> (Faculty)</li>
+  <li><a href="https://www.cs.sfu.ca/~miltner/">Anders Miltner</a> (Faculty)</li>
+  <li>Wei Adam Tan (PhD Student)</li>
+  <li>Nazanin Yousefian (MSc Student)</li>
+  <li>David Wiebe (Undergraduate Student)</li>
+  <li>Anton Ilic (Undergraduate Student)</li>
+  <li>Rafael Guevara (Undergraduate Student)</li>
+</ul>
+</div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section id="publications" class="odd-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="page-header">
+<h1>Publications</h1>
+</div>
+
+<div>
+<p><a name="confluence-iwc20"></a>
+Anders Miltner, Kathleen Fisher, Benjamin Pierce, David Walker, and Steve Zdancewic.
+ <b>Confluence in Lens Synthesis</b>.
+ In <em>9th International Workshop on Confluence (IWC), Paris, France</em>, June 2020.
+[&nbsp;<a href="../papers/confluence.pdf ">conference version</a>&nbsp;]
+
+</p>
+<p><a name="symmetric-icfp19"></a>
+Anders Miltner, Solomon Maina, Kathleen Fisher, Benjamin Pierce, David Walker, and Steve Zdancewic.
+ <b>Synthesizing Symmetric Lenses</b>.
+ In <em>ACM SIGPLAN International Conference on Functional Programming (ICFP), Athens, Greece</em>, August 2019.
+[&nbsp;<a href="../papers/soptician.pdf ">conference version</a>&nbsp;]
+
+</p>
+<p><a name="quotient-icfp18"></a>
+Solomon Maina, Anders Miltner, Kathleen Fisher, Benjamin Pierce, David Walker, and Steve Zdancewic.
+ <b>Synthesizing Quotient Lenses</b>.
+ In <em>ACM SIGPLAN International Conference on Functional Programming (ICFP), St. Louis, MO</em>, September 2018.
+[&nbsp;<a href="../papers/qptician.pdf ">conference version</a>&nbsp;]
+
+</p>
+<p><a name="bijective-popl18"></a>
+Anders Miltner, Kathleen Fisher, Benjamin Pierce, David Walker, and Steve Zdancewic.
+ <b>Synthesizing Bijective Lenses</b>.
+ In <em>ACM SIGPLAN Symposium on Principles of Programming Languages (POPL), Los Angeles, CA</em>, January 2018.
+[&nbsp;<a href="../papers/optician.pdf ">conference version</a>&nbsp;]
+
+</p>
+</div>
+<h2></h2>
+<div>
+  
+
+
+
+</div>
+
+    </section-->
+
+    <!--section id="resources" class="even-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="page-header">
+<h1>Optician Resources</h1>
+</div>
+
+<div>
+<ul>
+	<li><a href="http://www.google.com/recaptcha/mailhide/d?k=01vJoJCcn7NHwue4RYpKQzcA==&amp;c=RFJVVXS5bKGAMrt3v0_ncqL9piIu3dhwfrVtQF-s4F4=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01vJoJCcn7NHwue4RYpKQzcA\x3d\x3d\x26c\x3dRFJVVXS5bKGAMrt3v0_ncqL9piIu3dhwfrVtQF-s4F4\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Optician mailing list</a></li>
+	<li>Report bugs and make feature requests <a href="https://github.com/boomerang-lang/boomerang/issues">here</a></li>
+</ul>
+</div>
+
+
+                </div>
+                </div>
+        </div>
+    </section-->
+
+    <section id="support" class="odd-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="page-header">
+<h1>Support</h1>
+</div>
+
+<p>
+    This project is supported in part by National Cybersecurity Consortium Spearhead Grant #2024-1386 entitled
+    Preserving Relationship Privacy in Large Networks.  Any opinions, findings, and conclusions or
+    recommendations expressed in this material are those of the authors and do
+    not necessarily reflect the views of the NCC.
+</p>
+
+<p>
+<ul class="list-inline text-center">
+  <li>
+    <img src="img/ncc-logo.png" alt="National Cybersecurity Consortium" class="logo" style="max-width: 50%; border: 3px solid #555"/>
+  </li>
+</ul>
+</p>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer id="footer" class="even-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <a href="https://github.com/boomerang-lang/boomerang/tree/master/optician">
+  <div><i class="fa fa-github fa-5x"></i></div>
+  <div><span class="lead">Optician on Github</span></div>
+</a>
+                </div>
+            </div>
+        </div>
+    </footer-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
