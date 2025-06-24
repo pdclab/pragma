@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>pragma: Ensuring Relationship Privacy in Large Networks</title>
+  <title>pragma: Relationship Privacy in Large Networks</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -102,7 +102,7 @@
 			<div> <!--class="jumbotron"-->
   <img class="img-responsive center-block" src="img/pragma-logo.png" style="max-width: 30%"/>
   <br/>
-  <h3>Ensuring Relationship Privacy in Large Networks</h3>
+  <h3>Relationship Privacy in Large Networks</h3>
   <br/>
   <!--ul class="list-inline">
     <li>
@@ -112,7 +112,7 @@
     </li>
   </ul-->
     <!--li>
-      <a class="btn btn-lg btn-success" href="https://github.com/boomerang-lang/boomerang/tree/master/optician" target="_blank">
+      <a class="btn btn-lg btn-success" href="" target="_blank">
         See on Github »
       </a>
     </li-->
@@ -125,50 +125,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <div class="page-header">
-<h1>Overview</h1>
-</div>
+                  
+                  <!--
+                  <div class="page-header">
+                  </div>
+                  -->
 
-<p>According to Gartner, end-user expenses on security and privacy are expected to total $215 billion in 2024. These expenses reflect very real concerns for data leakage of private information to nefarious actors. For example, patients may want to keep aspects of their healthcare data private from their employers or insurance companies. Governments may require institutions guarantee that citizen data does not leak outside borders. Users may want to keep aspects of their lives private from employers who may discriminate upon them based on minority status, or even based upon associations with minorities.</p>
+<p>Security and privacy concerns are driving significant investment reflecting very real concerns for data leakage of private information to nefarious actors. Individuals and governments seek to prevent sensitive data like health or identity information from falling into the wrong hands. Despite these concerns, data sharing is essential for enabling valuable research and technologies. For example, data sharing in health care enables longitudinal studies that can help identify environmental comorbidities, find research biases, and more.</p>
 
-<p>However, data sharing enables technologies and research that are otherwise out of scope. For example, data sharing in health care enables longitudinal studies that can help identify environmental comorbidities, find research biases, and more.</p>
-
-<p>Lots of work has gone into studying how to share data in larger networks, while not betraying user privacy concerns. But these studies largely focus on the properties of individual data points, or simple relationships between those individual points. This is unsatisfying, as recent advances in graph mining research permit learning complex and intricate relationships between entities (e.g., discovering insightful subgraph structures) within these large data sets. With these larger systems, users cannot know whether nefarious actors can infer data about them and their relationships from these larger graphs.</p>
+<p>Lots of work has gone into studying how to share data in large networks, while not betraying user privacy concerns. But these studies largely focus on the properties of individual data points, or simple relationships between those individual points. This is unsatisfying, as recent advances in graph mining research permit learning complex and intricate relationships between entities (e.g., discovering insightful subgraph structures), raising new privacy risks, as users may be unknowingly exposed through connections in large, shared graphs.</p>
 
 <h3>Our Pragmatic Solution: pragma</h3>
 
-<p>We propose <i>pragma</i>, a system that enables privacy at the level of complex and transitive interrelationships. In pragma, users can programmatically encode relationships they wish to keep private. pragma would then model these constraints at the subgraph level to capture the interdependence between the individual data points, relationships in their broader neighbourhood, and across the entire network. The above models will then be leveraged to prevent relationships users consider sensitive from being leaked. We envision our research will open pathways to building privacy solutions that consider complex interrelationships from a privacy perspective.</p>
+<p><i>pragma</i> is a framework that enables privacy at the level of complex and transitive interrelationships. In pragma, users programmatically encode relationships they wish to keep private. pragma would then model these constraints at the subgraph level to capture the interdependence between the individual data points, relationships in their broader neighbourhood, and across the entire network. The above models will then be leveraged to prevent relationships users consider sensitive from being leaked. We envision our research will open pathways to building privacy solutions that consider complex interrelationships from a privacy perspective.</p>
 
-<p>In addition to expertise in privacy protection, pragma will draw upon the knowledge and skills from programming languages and graph data analytics research. We identify several key challenges that will be addressed throughout this project. First, we need to establish the boundaries of different relationship level privacy needs in terms of the constraints that get translated at subgraph level as well as across the entire network. Second, we need to model various data sharing specifications over data points and relationships such that the relationship level privacy needs are never violated. Third, we need to design data sharing protocols with complex querying capabilities at subgraph level while still adhering to the underlying relationship level privacy specifications. Finally, we need to enhance the data sharing protocols to safeguard against inference of sensitive relationship data over series of independent data sharing sessions.</p>
+<p>In addition to expertise in privacy protection, pragma will draw upon the knowledge and skills from programming languages and graph data analytics research. There are several key challenges that will be addressed throughout this project. First, we need to establish the boundaries of different relationship level privacy needs in terms of the constraints that get translated at subgraph level as well as across the entire network. Second, we need to model various data sharing specifications over data points and relationships such that the relationship level privacy needs are never violated. Third, we need to design data sharing protocols with complex querying capabilities at subgraph level while still adhering to the underlying relationship level privacy specifications. Finally, we need to enhance the data sharing protocols to safeguard against inference of sensitive relationship data over series of independent data sharing sessions.</p>
 
-<p>In addressing these challenges we aim to design broader relationship-level threat classes based on the graph querying capabilities, and develop robust solutions to guarantee relationship-level privacy throughout each of those classes. Our solutions will capture different practical querying use cases like K-Hop queries and community-centric queries. We will further address diverse relationship-level privacy needs by creating a need-inclusive relationship-level privacy framework that enables users to customize their policies. We also aim to identify key metrics to measure the effectiveness of privacy preservation at relationship-level, which will help us quantify the impact of our solutions. Our solutions will establish the forefront of state-of-the-art technology for relationship-level privacy preserving techniques. </p>
+<p>In addressing these challenges we aim to design broader relationship-level threat classes based on the graph querying capabilities, and develop robust solutions to guarantee relationship-level privacy throughout each of those classes. Our solutions will capture different practical querying use cases and will further address diverse relationship-level privacy needs via a need-inclusive relationship-level privacy framework for customized policies. Our solutions will establish the forefront of state-of-the-art technology for relationship-level privacy preserving techniques. </p>
 
-<p>For practical adoption and impact, our plan is to engage with industry from the get go, and capture the scenarios they face along with any data they may be willing to share. We plan to construct benchmarks and datasets (safely anonymized) and potentially release them for wider adoption. We also aim to build software tools and help our potential industrial partners in adopting them to benefit the consumers of their products. Finally, we aim to ensure sustainability by producing research papers and releasing software tools, which will empower fellow researchers and practitioners to contribute and catalyze diverse avenues for future research. Our eventual goal is to help make Canada a leader at the intersection of graph-based analytics systems and security and privacy.</p>
-
-
-
-<!--p> Many programs are
-    dedicated to converting data from one form into another.  Domain specific
-    languages allow for implementations of these data transformers, while
-    guaranteeing desired properties, but these
-    languages can be difficult to learn and program in.
-
-    In this project, we take in a specification of the data formats, as well as
-    a suite of examples, and synthesize a program in a data conversion DSL.
-</p>
-
-<h3> Boomerang Synthesis </h3>
-<p>
-    Boomerang is a language for transforming string data.
-    A boomerang program is a "lens": it can convert from a source data format
-    to a target data format, and back from the target to the source.  These
-    pairs of functions satisfy useful invertibility properties.
-
-    In this project, we take as input two format descriptors, in the form of regular
-    expressions, and a suite of input-output examples,
-    and synthesize a boomerang program that converts back-and-forth between
-    those format descriptors.  
-</p-->
                 </div>
             </div>
         </div>
@@ -203,7 +177,7 @@
 
 <div class="row">
 <div class="col-md-6">
-<h2><img src="img/sfu-logo.png" alt="Simon Fraser University" style="max-width: 15%"/>&nbsp;&nbsp;&nbsp;Simon Fraser University</h2>
+<h2><img src="img/sfu-logo.png" alt="Simon Fraser University" style="max-width: 15%"/>&nbsp;&nbsp;Simon Fraser University</h2>
 <ul>
   <li><a href="https://www.cs.sfu.ca/~keval/">Keval Vora</a> (Faculty)</li>
   <li><a href="https://www.cs.sfu.ca/~miltner/">Anders Miltner</a> (Faculty)</li>
